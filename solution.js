@@ -49,7 +49,7 @@ function prevDay(currDay, output) {
 }
 
 function nextDay(currDay, output) {
-    for(let j = currDay + 1; ; j = (j+1) % 7 ) {
+    for(let j = (currDay + 1)%7; ; j = (j+1) % 7 ) {
         if(output.hasOwnProperty(days[j])) {
             return j;
         }
